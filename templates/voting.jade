@@ -1,0 +1,44 @@
+doctype html
+html
+  include head
+body
+  x-appbar
+    header rangevote.it
+    button.target-button ?
+    x-tooltip
+      p More info 
+        a(href="http://en.wikipedia.org/wiki/Range_voting") here
+  .options-wrapper
+    table
+      thead
+        tr
+          th Option
+          th Your vote
+          th Total
+      tbody
+        tr#option1
+          td This is Option no 1
+          td
+            p
+            x-slider(polyfill, min='0', max='6', step='1', value='0')
+          td 34
+        tr#option2
+          td This is Option no 2
+          td
+            p
+            x-slider(polyfill, min='0', max='6', step='1', value='0')
+          td 34
+        tr#option3
+          td This is Option no 3
+          td
+            p
+            x-slider(polyfill, min='0', max='6', step='1', value='0')
+          td 34
+        tr#option4
+          td This is Option no 4
+          td
+            p
+            x-slider(polyfill, min='0', max='6', step='1', value='0')
+          td 34
+  .footer
+    .notices This is a legal and code blurb

@@ -11,7 +11,10 @@ body
   .call
     p Simple and fast range voting
   .create
-    input(type=text,  placeholder="Enter vote name to create")
+    input(type=text,  placeholder="Enter vote name")
+    input.sec(type=text,  placeholder="Enter vote question")
+    input.sec(type=text,  placeholder="Enter vote option 1")
+    input.sec(type=text,  placeholder="Enter vote option 2")
     button Create vote
   .footer
     .notices This is a legal and code blurb
